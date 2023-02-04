@@ -4,56 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/font.css" />
+
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
   <body
-    style="font-family: 'RF Dewi Expanded', serif"
+
     class="bg-[#000] text-[#fff]"
   >
     <header
       style="background-image: url(../img/bg1.png)"
-      class="bg-no-repeat bg-cover h-[100vh] phone:bg-[url(../img/bg-m.png) py-[20%] relative"
+      class="bg-no-repeat bg-cover h-[100vh] phone:h-[80vh] phone:bg-[url(../img/bg-m.png) py-[20%] phone:py-[55%] relative phone:bg-center"
     >
-      <nav
-        class="fixed top-0 w-[100%] flex justify-between items-center bg-[#00000070]  px-[10%] py-[22px]"
-      >
-        <div class="]">
-          <img src="/img/logo.png" alt="logo" />
-        </div>
-        <ul class="flex justify-evenly flex-1 opacity-[0.9]">
-          <li class="text-[600]">
-            <a href="" class="hover:opacity-[1]">Гравная</a>
-          </li>
-          <li class="text-[600]"><a href="">Страховка</a></li>
-          <li class="text-[600]"><a href="">FAQ</a></li>
-          <li class="text-[600]"><a href="">Доставка</a></li>
-          <li class="text-[600]"><a href="">Контакты</a></li>
-        </ul>
-        <div class="text-[700] text-[20px]">
-          <button>Оставить заявку</button>
+      <nav class="fixed top-0 w-[100%] bg-[#00000099] py-[22px]">
+        <div class="flex justify-between items-center w-[80%] mx-auto phone:w-[95%]">
+          <div class="w-[20%] phone:w-[50%]">
+            <img src="/img/logo.png" class="w-[100%]" alt="logo" />
+          </div>
+          <ul class="flex justify-between opacity-[0.9] w-[72%] phone:hidden">
+            <li class="text-[600]">
+              <a href="" class="hover:opacity-[1]">Гравная</a>
+            </li>
+            <li class="text-[600]"><a href="">Страховка</a></li>
+            <li class="text-[600]"><a href="">FAQ</a></li>
+            <li class="text-[600]"><a href="">Доставка</a></li>
+            <li class="text-[600]"><a href="">Контакты</a></li>
+            <li class="text-[700] text-[19px]">
+              <button>Оставить заявку</button>
+            </li>
+          </ul>
+          <div
+            class="w-[43px] h-[43px] bg-[#00000090] py-[15px] rounded-[50%] hidden phone:block"
+          >
+            <img src="../img/menu.png" class="w-[20px] m-auto" alt="toggle" />
+          </div>
         </div>
       </nav>
-      <div class="text-center">
-        <h1 class="text-[45px] text-[700]">
-          Подключайтесь к такси в Польше <br />
+      <div class="text-center phone:w-[90%] phone:mx-auto">
+        <h1 class="text-[45px] text-[700] phone:text-[25px]">
+          Подключайтесь к такси в Польше <br class="phone:hidden" />
           с ежедневным стабильным заработком!
         </h1>
-        <p class="text-[20px] mt-[23px] mb-[36px]">
+        <p class="text-[20px] mt-[23px] mb-[36px] phone:text-[16px]">
           Ежедневные выплаты стали реальными вместе с Cleo Partner
         </p>
         <div class="flex justify-center">
           <div>
-            <button class="py-[17px] px-[28px] bg-[#fff] text-[#000] mr-[15px]">Оставить заявку</button>
+            <button class="py-[17px] px-[23px] phone:px-[28px] text-[700] text-[17px] bg-[#fff] text-[#000] mr-[15px]">
+              Оставить заявку
+            </button>
           </div>
-          <div>
-            <button class="py-[17px] px-[28px]">Узнать больше</button>
+          <div class="phone:hidden">
+            <button class="py-[17px] px-[23px]">Узнать больше</button>
           </div>
         </div>
       </div>
-      <div class="absolute right-[6%] bottom-[10%] bg-[#000000ad] w-[80px] p-[20px] rounded-[50%]">
-        <img src="../img/chat.png" alt="chat-icon">
+      <div
+        class="absolute right-[6%] bottom-[10%] bg-[#000000ad] w-[80px] phone:w-[50px] p-[20px] phone:p-[15px] phone:bottom-[20%] rounded-[50%]"
+      >
+        <img src="../img/chat.png" alt="chat-icon" />
       </div>
     </header>
   </body>
